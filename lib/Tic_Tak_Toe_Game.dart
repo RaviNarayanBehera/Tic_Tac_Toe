@@ -170,7 +170,8 @@ class _GameState extends State<Game> {
         TicTacToeList[0] == TicTacToeList[8] &&
         TicTacToeList[0] != '') {
       GreetingBox(TicTacToeList[0]);
-    } else if (drawCondition == 9) {
+    }
+    else if (drawCondition == 9) {
       DrawBox();
     }
   }
