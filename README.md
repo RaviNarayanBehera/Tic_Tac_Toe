@@ -1,16 +1,16 @@
-# tic_tac_toe
+# Tic_Tac_Toe
 
-A new Flutter project.
+#
+<h1 align = "center">
+O-X Game Video
+</h1>
+<div align="center">
+<video src = "https://github.com/RaviNarayanBehera/Tic_Tac_Toe/assets/148530184/66cee317-a50f-48dd-a6bc-cb77be9783a3"
+>
 
-## Getting Started
 
-This project is a starting point for a Flutter application.
 
-A few resources to get you started if this is your first Flutter project:
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+
+
