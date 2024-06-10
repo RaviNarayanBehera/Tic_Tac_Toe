@@ -14,17 +14,66 @@ class _GameState extends State<Game> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Tic Tac Toe'),
+        backgroundColor: Colors.black,
+        title: const Text('Tic Tac Toe',style: TextStyle(fontSize: 30,fontWeight: FontWeight.w500,color: Colors.white),),
         centerTitle: true,
       ),
       body: Padding(
         padding: const EdgeInsets.all(18.0),
         child: Column(
           children: [
-            const Row(
-              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-              children: [],
+            const Text(
+              'Score Board',
+              style: TextStyle(
+                  fontSize: 30,
+                  fontWeight: FontWeight.w500,
+                  decoration: TextDecoration.underline,
+                  color: Colors.black),
             ),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              children: [
+                Row(
+                  children: [
+                    const Text(
+                      'O  ----  ',
+                      style: TextStyle(
+                          color: Colors.black,
+                          fontSize: 25,
+                          fontWeight: FontWeight.w500),
+                    ),
+                    Text(
+                      player1_0.toString(),
+                      style: const TextStyle(
+                          color: Colors.black,
+                          fontSize: 25,
+                          fontWeight: FontWeight.w500),
+                    ),
+                  ],
+                ),
+                const SizedBox(height: 70,),
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                  children: [
+                    const Text(
+                      'X  ----  ',
+                      style: TextStyle(
+                          color: Colors.black,
+                          fontSize: 25,
+                          fontWeight: FontWeight.w500),
+                    ),
+                    Text(
+                      player2_X.toString(),
+                      style: const TextStyle(
+                          color: Colors.black,
+                          fontSize: 25,
+                          fontWeight: FontWeight.w500),
+                    ),
+                  ],
+                ),
+              ],
+            ),
+            const SizedBox(height: 50,),
             Expanded(
               flex: 3,
               child: GridView.builder(
@@ -51,58 +100,6 @@ class _GameState extends State<Game> {
                       ),
                     );
                   }),
-            ),
-            const Text(
-              'Score Board',
-              style: TextStyle(
-                  fontSize: 30,
-                  fontWeight: FontWeight.w500,
-                  decoration: TextDecoration.underline,
-                  color: Colors.black),
-            ),
-            const SizedBox(
-              height: 20,
-            ),
-            Row(
-              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-              children: [
-                Row(
-                  children: [
-                    const Text(
-                      'O  ----  ',
-                      style: TextStyle(
-                          color: Colors.black,
-                          fontSize: 25,
-                          fontWeight: FontWeight.w500),
-                    ),
-                    Text(
-                      player1_0.toString(),
-                      style: const TextStyle(
-                          color: Colors.black,
-                          fontSize: 25,
-                          fontWeight: FontWeight.w500),
-                    ),
-                  ],
-                ),
-                Row(
-                  children: [
-                    const Text(
-                      'X  ----  ',
-                      style: TextStyle(
-                          color: Colors.black,
-                          fontSize: 25,
-                          fontWeight: FontWeight.w500),
-                    ),
-                    Text(
-                      player2_X.toString(),
-                      style: const TextStyle(
-                          color: Colors.black,
-                          fontSize: 25,
-                          fontWeight: FontWeight.w500),
-                    ),
-                  ],
-                ),
-              ],
             ),
           ],
         ),
